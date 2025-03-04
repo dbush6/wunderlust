@@ -1,0 +1,261 @@
+Darren Bush
+
+:root{
+    --yellow: #f6d64a;
+    --teal: #55bcd5;
+    --purple: #9b26b0;
+    --blue: #499bd2;
+    --dark-gray: #222;
+    --light-gray: #eaeaea;
+    --white: #fff;
+    --black: #000;
+}
+
+h1, h2, h3 {
+    font-family: Molle;
+}
+
+h4, p, q, small, nav, button, form {
+    font-family: Montserrat;
+}
+
+#skip {
+    visibility: hidden;
+}
+
+nav h2 {
+    visibility: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+#about {
+    background-color: #499bd2;    
+}
+
+#plan {
+    background-color: #f6d64a;
+}
+
+#plan div {
+    justify-content: space-evenly;
+}
+
+#plan a {
+    padding: 3rem;
+    border-radius: 5px;
+    background-color: #55bcd5;
+}
+
+#mySubmit {
+    background-color: #9b26b0;
+    color: #fff;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    border: 2px #9b26b0;
+}
+
+footer {
+    background-color: #eaeaea;
+        text-align: center;
+}
+
+@media screen and (min-width: 320px){
+    #menu-toggle a {
+        background-color: #55bcd5;
+        color: #000;
+        display: block;
+        width: 100%;
+    }
+
+    #menu-toggle label {
+        background-color: #000;
+        color: #fff;
+    }
+    
+    #testimonials div{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+    #plan {
+        padding: 2rem 0;
+    }
+
+    #plan div {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-items: center;
+        text-align: left;
+    }
+
+    #about div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    nav a {
+        text-align: center;
+        text-decoration: none;
+    }
+
+    nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: .5rem;
+    }
+
+    #plan, #testimonials, #about {
+        padding: 5rem 0 5rem;
+        display: block;
+    }
+
+    #toggle {
+        visibility: hidden;
+    }
+
+
+}
+
+
+@media screen and (min-width: 650px){
+    #menu-toggle a {
+        background-color: #fff;
+        color: #000;
+        padding: 1rem;
+    }
+
+    #menu-toggle a:hover {
+        background-color: #f6d64a;
+        color: #000;
+    }
+
+    #menu-toggle label, #toggle {
+        visibility: hidden;
+    }
+    
+    #testimonials div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #plan div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #about div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: .5rem;
+        }
+
+    form {
+        display: inline-flex;
+    }
+
+    #plan, #testimonials, #about {
+        padding: 5rem 0 5rem;
+    }
+}
+
+
+@media screen and (min-width: 1250px){
+    header {
+        display: grid;
+
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    body {
+        padding: 0 5rem;
+    }
+
+    #main-content {
+        display: grid;
+    }
+
+    #menu-toggle a {
+        background-color: #fff;
+        color: #000;
+        padding: 1rem;
+    }
+
+    #menu-toggle a:hover {
+        background-color: #f6d64a;
+        color: #000;
+    }
+
+    #menu-toggle label, #toggle {
+        visibility: hidden;
+    }
+    
+    #testimonials div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #plan, #testimonials, #about {
+        padding: 5rem;
+    }
+
+    #plan div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #about div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #contact {
+        display: grid;
+    }
+
+    form {
+        display: inline-flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#names{
+    display: block;
+    background-color: #fff;
+    color: #222;
+}
+
+
+
+
+
+
+
+input {
+    background-color: #fff;
+    color: #000;
+}
